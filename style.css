@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.title {
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    width: 70%;
+    height: 50px;
+    background: #380404;
+    text-align: center;
+    padding-top: 15px;
+    color: #dddada;
+    font-size: 23px;
+}
+span {
+    color: chocolate;
+}
+.game {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.grid {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+    height: 60%;
+    grid-template-rows:repeat(3,3fr) ;
+    gap: 10px;
+}
+@media (min-width: 340px)  and (max-width:550px) {
+    .flex {
+        width: 90%;
+        height: 50%;
+    }
+}
+.square {
+    background: #530202;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.square:hover {background: #750202;}
